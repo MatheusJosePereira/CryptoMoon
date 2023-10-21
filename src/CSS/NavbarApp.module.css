@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+  }
+
+.NavCorpo{
+    background: linear-gradient(to right,#1F172C,#00020E)
+}
+
+.logo{
+    width: 100px;
+    margin-left: 0px;
+}
+
+.nav{
+    color: white;
+}
+
+.linknav{
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+    position: relative;
+    font-family: Montserrat;
+}
+
+.linknav::after{
+    content: " ";
+    width: 0%;
+    height: 2.5px;
+    background-color: #7B3CE1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.linknav:hover ::after{
+    width: 105%;
+}
+
+.linknav:hover{
+    color: #7B3CE1;
+    transition: 0.4s all;
+}
+
+span{
+    color: white;
+    font-family: Montserrat;
+}
+
+.ContainerButtonsNav{
+    margin-left: 300px;
+    width: 250px;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Hamburguer{
+    color: white;
+    background-color: white;
+}
+
+
+.ContainerButtonsNav2{
+    margin-left: 0px;
+}
+
+span.HamburguerButton{
+    fill: white !important;
+}
+
+@media screen and (max-width: 767px){
+    .logo{
+        margin-left: 00px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .ContainerButtonsNav{
+        margin-left: 150px;
+    }
+}

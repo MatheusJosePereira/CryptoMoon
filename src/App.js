@@ -1,23 +1,42 @@
-import logo from './logo.svg';
+
 import './App.css';
+
+//Navbar Componente
+import NavbarApp from './components/NavbarApp';
+
+//Header componente
+import HeaderApp from './components/HeaderApp';
+
+//Sessão celular, segurança,suporte,cotações
+import SessaoCelularApp from './components/SessaoCelularApp';
+
+//Sessão investidores, Carrosel, MoonTalk
+import SessaoInvestidoresApp from './components/SessaoInvestidoresApp';
+
+//Sessão criptomoedas, carrosel infinito, compras
+import SessaoCriptosApp from './components/SessaoCriptosApp';
+
+//Sessão vantagens, velocidade,liquidez,total controle
+import SessaoVantagensApp from './components/SessaoVantagensApp';
+
+//Sessão formulário, avaliação, emojis, etapas
+import SessaoJornadaApp from './components/SessaoJornadaApp';
+
+//Footer, links, sobre loja, agradecimentos
+import FooterApp from './components/FooterApp';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavbarApp/>
+      <HeaderApp/>
+      <SessaoCelularApp/>
+      <SessaoInvestidoresApp/>
+      <SessaoCriptosApp/>
+      <SessaoVantagensApp/>
+      <SessaoJornadaApp/>
+      <FooterApp/>
     </div>
   );
 }

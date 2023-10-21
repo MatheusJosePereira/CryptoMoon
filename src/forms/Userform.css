@@ -1,0 +1,6 @@
+.form_control{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    margin-bottom: 2rem;
+}

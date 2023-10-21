@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+  }
+
+.voltar{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff00;
+}
+
+.cabecalho{
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 60px;
+}
+
+.cabecalho h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: Poppins;
+}
+
+.cabecalho p {
+    font-family: Montserrat;
+}
+
+/*Form*/
+
+.form_container{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: rgba(100,100,111,.2) 0px 7px 29px 0px;
+}
+
+.form_container form{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.inputs_container{
+    min-height: 280px;
+}
+
+.actions{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+
+.actions button{
+    font-size: .9rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #fffefe;
+    transition: 0.3s;
+    border: none;
+}
+
+.actions button:hover{
+    background-color: #cfcfcf;
+}

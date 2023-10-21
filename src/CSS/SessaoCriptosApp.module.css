@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+  }
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideinvertido{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.logos{
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 00px 0 ;
+    position: relative;
+}
+
+.logos::before, .logos::after{
+    position: absolute;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+
+}
+
+.logos::before{
+    background: linear-gradient(to left ,rgba(255,255,255,0), white);
+    left: 0;
+}
+
+.logos::after{
+    background: linear-gradient(to right ,rgba(255,255,255,0), white);
+    right: 0;
+}
+
+.logos:hover .logos_slide{
+    animation-play-state: paused;
+}
+
+.logos:hover .logos_slide2{
+    animation-play-state: paused;
+}
+
+.logos_slide{
+  
+
+    background-color: white;
+    animation: 35s slide infinite linear;
+    display: inline-block;
+}
+
+.logos_slide img{
+    height: 200px;
+    margin: 0 40px;
+}
+
+.logos_slide2{
+  
+
+    background-color: white;
+    animation: 35s slideinvertido infinite linear;
+    display: inline-block;
+}
+.logos_slide2 img{
+    height: 200px;
+    margin: 0 40px;
+}
+
+.titulo_criptos{
+    text-align: center;
+    color: #8876E5;
+    margin-top: 40px;
+    font-family: Poppins;
+    
+}
+
+.button_investiragora{
+    text-align: center;
+    letter-spacing: 2px;
+    border: 2px solid white;
+    padding: 10px;
+    margin-top: 40px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: color 1s;
+    border-radius: 200px;
+    margin-left: 660px;
+    font-family: Poppins;
+}
+
+.button_investiragora:hover{
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+}
+
+.button_investiragora::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    background-color: #9900ff;
+    transform: scaleX(45deg);
+    z-index: -1;
+    transition: width 1s;
+}
+
+.button_investiragora:hover::before{
+    width: 150%;
+}
+
+@media screen and (max-width: 1101px){
+
+    .button_investiragora{
+        margin-left: 500px;
+    }
+}
+
+
+@media screen and (max-width: 954px){
+
+    .button_investiragora{
+        margin-left: 350px;
+    }
+
+}
+
+@media screen and (max-width: 852px) {
+
+    img{
+        scale: 0.7;
+        margin: 0;
+    }
+    .button_investiragora{
+        margin-left: 350px;
+    }
+    
+}
+
+@media screen and (max-width: 645px){
+    .button_investiragora{
+        margin-left: 250px;
+    }
+}

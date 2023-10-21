@@ -1,0 +1,340 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+.pai{
+    background-color: #000000;
+    
+}
+
+.fundo_header{
+        width: 100%;
+        height: 600px; 
+        background-color: #5C1276; 
+        display: flex;
+        z-index: -1;
+           
+}
+
+.container_header{
+    width: 620px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo_header{
+    margin-top: 130px;
+    color: white;
+    margin-left: 65px;
+    font-size: 42px;
+    text-align: center;
+    font-family: Poppins;
+}
+
+.descricao_header{
+    color: white;
+    margin-left: 65px;
+    margin-top: 25px;
+    font-size: 25px;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+.button {
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 4px;
+    position: relative;
+    background-color: #7B3CE1;
+    border: none;
+    color: #fff;
+    padding: 20px;
+    width: 200px;
+    height: 59px;
+    text-align: center;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    box-shadow: 0 4px 20px #9B2F9D;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 220px;
+    font-family: Poppins;
+  }
+
+  .texto_button{
+    margin-top: 15px;
+    font-family: Poppins;
+  }
+  
+  .button:hover {
+    background: #0761e7d8;
+    box-shadow: 0px 2px 10px 5px #1a5dbc;
+    color: #ffffff;
+  }
+  
+  .button:after {
+    content: "";
+    background: #0553d9;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+  
+  .button:focus { outline:0; }
+
+  .phone_body{
+    width: 250px;
+    height: 400px;
+    
+    z-index: 2;
+    position: absolute;
+    left: 950px;
+    top: 130px;
+
+    
+    
+   
+  }
+
+  .Container_phone{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+  }
+  
+
+  .perfil{
+    width: 45px;
+    height: 45px;
+    border-radius: 25px;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+   
+    float: left;
+    background-image: url(../img/Matheusjosé_fotoproa.jpg);
+    background-size: contain;
+    cursor: pointer;
+  }
+
+  .nome_perfil{
+    position: relative;
+    float: left;
+    margin-top: 15px;
+    margin-left: 50px;
+    font-size: 14px;
+    margin-right: 32px;
+    cursor: pointer;
+    color: #fff;
+   
+  }
+
+
+  .settings{
+    width: 40px;
+    position: relative;
+    float: left;
+    border-radius: 40px;
+    margin-top: 4px;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+
+  .logo_phone{
+    width: 50px;
+    margin-left: -145px;
+    margin-top: 50px;
+    position: relative;
+    clear: left;
+  }
+
+  .Conta{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    clear: left;
+    margin-top: 10px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+  }
+
+  .Saldo{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .Saldo_atual{
+    margin-top: -20px;
+    margin-left: 15px;
+    font-size: 14px;
+  }
+
+.grafico_perfil{
+  position: absolute;
+  left: 160px;
+  top: 10px; 
+ 
+}
+
+.corpo_bitcoin{
+  width: 80%;
+  height: 150px;
+  background-color: gray;
+  margin-left: 20px;
+  display: flex;
+  margin-bottom: 12px;
+  
+}
+
+
+.bitcoin{
+  margin-left: 30px;
+  width: 30px;
+  height: 30px;
+  margin-top: 7px;
+}
+
+.BTC_valor{
+  display: inline;
+  margin-left: 16px;
+  margin-top: 10px;
+  color: goldenrod;
+}
+
+.valores{
+  background-color: #ffffff00;
+  color: rgb(51, 255, 0);
+}
+
+.SeuOrcamento{
+  text-align: center;
+  color: #000;
+}
+
+.btn_qrcode{
+  position: absolute;
+  top: 500px;
+  width: 180px;
+  left: 150px;
+  font-family: Poppins;
+}
+
+.btn_playstore{
+  position: absolute;
+  top: 500px;
+  width: 180px;
+  left: -70px;
+  font-family: Poppins;
+}
+
+
+.qrcode_app{
+  width: 40px;
+}
+
+ 
+
+/*Responsividade Tablet*/
+@media screen and (max-width: 767px){
+    .fundo_header{
+        background-color: #5C1276;
+        
+    }
+    
+    .phone_body{
+      display: none;
+    }
+
+    .Container_phone{
+      display: none;
+    }
+
+    .Conta{
+      display: none;}
+}
+
+@media  screen and (max-width:758px) {
+  .descricao_header{
+    margin-left: 120px;
+    font-size: 25px;
+    width: 350px;
+  }
+
+  .titulo_header{
+    
+    color: white;
+    margin-left: 0px;
+    
+}
+}
+
+@media screen and (max-width:1278px) {
+
+  .fundo_header{
+    background-color: #5C1276;
+    
+}
+
+.phone_body{
+  left:760px
+}
+
+.Container_phone{
+  left: 0px
+}
+
+.Conta{
+  left: 0px;}
+  
+}
+
+@media screen and (max-width:1100px){
+  .phone_body{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 681px) {
+
+  .titulo_header{
+    margin-left: -120px;
+  }
+
+  .descricao_header{
+    margin-left: 50px;
+  }
+
+  .button{
+    margin-left: 130px;
+  }
+  
+}
